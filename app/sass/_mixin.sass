@@ -1,0 +1,22 @@
+
+
+$phone: 480px
+$tablet: 768px
+$laptop: 960px
+$desctop: 1200px
+
+=media($media)
+	@if $media == phone
+		@media only screen and (max-width: $phone)
+			@content
+	@else if $media == tablet
+		@media only screen and (max-width: $tablet)
+			@content
+
+	@else if $media == laptop
+		@media only screen and (max-width: $laptop)
+			@content
+
+	@else if $media == desctop
+		@media only screen and (max-width: $desctop)
+			@content

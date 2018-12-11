@@ -1,0 +1,75 @@
+include inc/mixin
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width")
+		title Document
+
+		link(href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet")
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="img/favicon/apple-touch.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-114x114.png")
+
+		link(rel="stylesheet" href="css/style.min.css?rev=@@hash")
+
+	body
+		.wrapper
+			section.top
+				.container.flex
+					.login.flex
+						.login__agent
+							i.fa
+							a.login__link Agent Login
+						.login__customer
+							i.fa
+							a.login__link Customer login
+						.login__register
+							i.fa
+							a.login__link.
+								Not a Member ? Register
+						.namber
+							a.login__link Call Us Now :815-123-4567
+
+					nav.social
+						a.social__link
+							img.social__icon(src="../img/facebook.png", alt="")
+						a.social__link
+							img.social__icon(src="../img/twwiter.png", alt="")
+						a.social__link
+							img.social__icon(src="../img/t.png", alt="")
+						a.social__link
+							img.social__icon(src="../img/printerest.png", alt="")
+
+
+			header.header
+				.container
+					.logo
+						a.logo__link
+						img.logo__img(src="img/logo.png", alt="#")
+
+					nav.nav
+						a.nav__link.nav__link-active(href="#") Home
+						a.nav__link(href="#") Destinations
+						a.nav__link(href="#") Criuses
+						a.nav__link(href="#") Specials
+						a.nav__link(href="#") Holidays
+						a.nav__link(href="#") Blog
+
+					.search
+						a.search__link(href="#")
+							i.fa.fa-search
+
+
+				section.slider
+					.carousel-item
+						img(src="img/silder-img.png", alt="#")
+						div.carousel-caption.d-none.d-md-block
+							h5.slider__title
+							p.slider__text
+
+
+		script(src="js/libs.min.js")
+		script(src="js/common.js")
