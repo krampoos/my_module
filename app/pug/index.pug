@@ -20,55 +20,86 @@ html(lang="ru")
 			section.top
 				.container.flex
 					.login.flex
-						.login__agent
-							i.fa
-							a.login__link Agent Login
-						.login__customer
-							i.fa
-							a.login__link Customer login
-						.login__register
-							i.fa
+						.border__item.login__agent
+							i.fa.fa-user 
+							a.login__link  Agent Login
+						.border__item.login__customer
+							i.fa.fa-user 
+							a.login__link  Customer login
+						.border__item.login__register
+							i.fa.fa-sticky-note-o 
 							a.login__link.
-								Not a Member ? Register
-						.namber
+								 Not a Member ? Register
+						.border__item.namber
 							a.login__link Call Us Now :815-123-4567
 
 					nav.social
-						a.social__link
-							img.social__icon(src="../img/facebook.png", alt="")
-						a.social__link
-							img.social__icon(src="../img/twwiter.png", alt="")
-						a.social__link
-							img.social__icon(src="../img/t.png", alt="")
-						a.social__link
-							img.social__icon(src="../img/printerest.png", alt="")
+						a.border__item.social__link
+							i.fa.fa-facebook
+						a.border__item.social__link
+							i.fa.fa-twitter
+						a.border__item.social__link
+							i.fa.fa-tumblr
+						a.border__item.social__link
+							i.fa.fa-pinterest
 
 
 			header.header
-				.container
-					.logo
-						a.logo__link
-						img.logo__img(src="img/logo.png", alt="#")
+				.nav-bar
+					.container.flex
+						.logo
+							a.logo__link
+							img.logo__img(src="img/logo.png", alt="#")
 
-					nav.nav
-						a.nav__link.nav__link-active(href="#") Home
-						a.nav__link(href="#") Destinations
-						a.nav__link(href="#") Criuses
-						a.nav__link(href="#") Specials
-						a.nav__link(href="#") Holidays
-						a.nav__link(href="#") Blog
+						nav.nav
+							a.nav__link.nav__link-active(href="#") Home
+							a.nav__link(href="#") Destinations
+							a.nav__link(href="#") Criuses
+							a.nav__link(href="#") Specials
+							a.nav__link(href="#") Holidays
+							a.nav__link(href="#") Blog
 
-					.search
-						a.search__link(href="#")
-							i.fa.fa-search
+						.search
+							a.search__link(href="#")
+								i.fa.fa-search
+					
+				.slider.owl-carousel.owl-theme
+					.slider__item
+						.slider__caption
+							h3.slider__title To travel is to live
+							p.slider__text.
+								You Don't Need Magic to Disappear. All you need is a destination.
+							.slider__btn.slider__btn-show
+								a.slider__link SHOW ON THE MAP
+							.slider__btn.slider__btn-show
+								a.slider__link MORE INFO
+					.slider__item
+						.slider__caption
+							h3.slider__title To travel is to live
+							p.slider__text.
+								You Don't Need Magic to Disappear. All you need is a destination.
+							.slider__btn.slider__btn-show
+								a.slider__link SHOW ON THE MAP
+							.slider__btn.slider__btn-show
+								a.slider__link MORE INFO
+					.slider__item
+						.slider__caption
+							h3.slider__title To travel is to live
+							p.slider__text.
+								You Don't Need Magic to Disappear. All you need is a destination.
+							.slider__btn.slider__btn-show
+								a.slider__link SHOW ON THE MAP
+							.slider__btn.slider__btn-show
+								a.slider__link MORE INFO
+
+				section.search
+					.search__text
+						h3.search__title.search__title-active find your
+						h2.search__title holydays
+					.search__form
 
 
-				section.slider
-					.carousel-item
-						img(src="img/silder-img.png", alt="#")
-						div.carousel-caption.d-none.d-md-block
-							h5.slider__title
-							p.slider__text
+
 
 
 		script(src="js/libs.min.js")
