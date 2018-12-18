@@ -1,21 +1,63 @@
-// с цветом
-    // .Shape_10 {
-//   background-color: rgb(29, 210, 175);
-//   position: absolute;
-//   left: 1620px;
-//   top: 434px;
-//   width: 80px;
-//   height: 80px;
-//   z-index: 15;
-// }
-    //без цвета 
-// .Shape_10 {
-//   background-color: rgb(255, 255, 255);
-//   opacity: 0.2;
-//   position: absolute;
-//   left: 0px;
-//   top: 434px;
-//   width: 80px;
-//   height: 80px;
-//   z-index: 11;
-// }
+.search
+	background: $accent_color
+	border-top: 1px solid #3a4e61
+
+.search__text
+	border-right: 1px solid #3a4e61
+	padding: rem(10px)
+	position: relative
+
+.search__title
+	text-transform: uppercase
+
+.search__title-active
+	color: $fonts_color
+
+.triangle
+	width: 10px
+	height: 10px
+	position: absolute
+	right: -5px
+	top: 50%
+	bottom: 50%
+	background: $accent_color
+	border: 1px solid #3a4e61
+	transform: rotate(55deg)
+
+
+.search__form
+	padding: rem(20px)
+	display: flex	
+
+label
+	color: $fonts_color
+	padding: 0 10px
+
+.search__map
+	background: #fff
+	border: 1px solid black
+	padding: 0 5px
+
+.input__map
+	border: none
+	background: none
+
+.fa-globe
+	color: #a4a4a4
+
+.search__date
+	background: #fff
+	border: 1px solid black
+	padding: 0 5px
+
+.input__date
+	border: none
+	background: none
+
+.fa-calendar
+	color: #a4a4a4
+
+.search__btn
+	background: #1dd2af
+	padding: 5px 20px
+	border: none

@@ -22,25 +22,25 @@ html(lang="ru")
 					.login.flex
 						.border__item.login__agent
 							i.fa.fa-user 
-							a.login__link  Agent Login
+							a.login__link(href="#") Agent Login
 						.border__item.login__customer
 							i.fa.fa-user 
-							a.login__link  Customer login
+							a.login__link(href="#") Customer login
 						.border__item.login__register
 							i.fa.fa-sticky-note-o 
-							a.login__link.
-								 Not a Member ? Register
+							a.login__link(href="#").
+								Not a Member ? Register
 						.border__item.namber
-							a.login__link Call Us Now :815-123-4567
+							a.login__link(href="#") Call Us Now :815-123-4567
 
 					nav.social
-						a.border__item.social__link
+						a.border__item.social__link(href="#")
 							i.fa.fa-facebook
-						a.border__item.social__link
+						a.border__item.social__link(href="#")
 							i.fa.fa-twitter
-						a.border__item.social__link
+						a.border__item.social__link(href="#")
 							i.fa.fa-tumblr
-						a.border__item.social__link
+						a.border__item.social__link(href="#")
 							i.fa.fa-pinterest
 
 
@@ -93,13 +93,29 @@ html(lang="ru")
 								a.slider__link MORE INFO
 
 				section.search
-					.search__text
-						h3.search__title.search__title-active find your
-						h2.search__title holydays
-					.search__form
+					.container.flex
+						.search__text
+							h3.search__title.search__title-active find your
+							h2.search__title holydays
+							.triangle
+						form.search__form(action="")
+							label.search__where(for="") Where
+							.search__map
+								input.input__map(type="map")
+								i.fa.fa-globe
+							label(for="") When
+							.search__date
+								input.input__date(type="date" text="select date")
+								i.fa.fa-calendar
+						input.search__btn(type="submit" value="Search")
+						
 
 
-				section.img__
+				section.offers.flex
+					.offers-slider.owl-carousel.owl-theme
+						.slider__block
+
+
 
 
 

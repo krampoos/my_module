@@ -16,12 +16,12 @@
 			<section class="top">
 				<div class="container flex">
 					<div class="login flex">
-						<div class="border__item login__agent"><i class="fa fa-user"> </i><a class="login__link"> Agent Login</a></div>
-						<div class="border__item login__customer"><i class="fa fa-user"> </i><a class="login__link"> Customer login</a></div>
-						<div class="border__item login__register"><i class="fa fa-sticky-note-o"> </i><a class="login__link"> Not a Member ? Register</a></div>
-						<div class="border__item namber"><a class="login__link">Call Us Now :815-123-4567</a></div>
+						<div class="border__item login__agent"><i class="fa fa-user"> </i><a class="login__link" href="#">Agent Login</a></div>
+						<div class="border__item login__customer"><i class="fa fa-user"> </i><a class="login__link" href="#">Customer login</a></div>
+						<div class="border__item login__register"><i class="fa fa-sticky-note-o"> </i><a class="login__link" href="#">Not a Member ? Register</a></div>
+						<div class="border__item namber"><a class="login__link" href="#">Call Us Now :815-123-4567</a></div>
 					</div>
-					<nav class="social"><a class="border__item social__link"><i class="fa fa-facebook"></i></a><a class="border__item social__link"><i class="fa fa-twitter"></i></a><a class="border__item social__link"><i class="fa fa-tumblr"></i></a><a class="border__item social__link"><i class="fa fa-pinterest"></i></a></nav>
+					<nav class="social"><a class="border__item social__link" href="#"><i class="fa fa-facebook"></i></a><a class="border__item social__link" href="#"><i class="fa fa-twitter"></i></a><a class="border__item social__link" href="#"><i class="fa fa-tumblr"></i></a><a class="border__item social__link" href="#"><i class="fa fa-pinterest"></i></a></nav>
 				</div>
 			</section>
 			<header class="header">
@@ -59,13 +59,30 @@
 					</div>
 				</div>
 				<section class="search">
-					<div class="search__text">
-						<h3 class="search__title search__title-active">find your</h3>
-						<h2 class="search__title">holydays</h2>
+					<div class="container flex">
+						<div class="search__text">
+							<h3 class="search__title search__title-active">find your</h3>
+							<h2 class="search__title">holydays</h2>
+							<div class="triangle"></div>
+						</div>
+						<form class="search__form" action="">
+							<label class="search__where" for="">Where</label>
+							<div class="search__map">
+								<input class="input__map" type="map"/><i class="fa fa-globe"></i>
+							</div>
+							<label for="">When</label>
+							<div class="search__date">
+								<input class="input__date" type="date" text="select date"/><i class="fa fa-calendar"></i>
+							</div>
+						</form>
+						<input class="search__btn" type="submit" value="Search"/>
 					</div>
-					<div class="search__form"></div>
 				</section>
-				<section class="img__"></section>
+				<section class="offers flex">
+					<div class="offers-slider owl-carousel owl-theme">
+						<div class="slider__block"></div>
+					</div>
+				</section>
 			</header>
 		</div>
 		<script src="js/libs.min.js"></script>
