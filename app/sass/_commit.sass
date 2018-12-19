@@ -1,8 +1,52 @@
 .commit
 	text-align: center
+	margin: 60px 0
 	
 .commit__title
 	color: $accent_color
 
 .commit__smil-title
 	color: #626262
+
+.commit__link
+	text-decoration: none
+
+.commit__item
+	position: relative
+	margin: 70px 20px
+	text-align: left
+	border: 1px solid #eeeeee
+	box-sizing: border-box
+
+.commit__triangle
+	position: absolute
+	width: 30px
+	height: 30px
+	bottom: -12px
+	right: 20px
+	transform: rotate(60deg)
+	background: #fff
+	border-bottom: 1px solid #eeeeee
+	border-right: 1px solid #eeeeee
+
+.commit__text
+	padding: 15px
+
+.commit__text:hover
+	border-top: 3px solid $color_blue
+	box-sizing: border-box
+	.commit__triangle
+		transform: rotate(-60deg)
+	.clients__commit
+		color: #4d4d4d
+
+.clients__commit
+	color: #a6a6a6
+
+.clients__name
+	color: $color_blue
+	margin-top: 5px
+
+.name
+	color: #dcdcdc
+	margin-top: 5px
